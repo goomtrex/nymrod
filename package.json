@@ -1,0 +1,39 @@
+{
+  "name": "nymrod",
+  "version": "0.0.0",
+  "description": "Classy class thing.",
+  "main": "lib/pub/index.js",
+  "scripts": {
+    "compile": "babel lib/dev/ --out-dir lib/pub/",
+    "prepublish": "npm run compile",
+    "pretest": "npm run prepublish --silent",
+    "test": "mocha lib/pub/index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tosyx/nymrod.git"
+  },
+  "keywords": [
+    "Class",
+    "Decorator",
+    "Monad"
+  ],
+  "author": "TOSYX",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tosyx/nymrod/issues"
+  },
+  "homepage": "https://github.com/tosyx/nymrod#readme",
+  "dependencies": {
+    "nymbol": "^0.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5",
+    "babel-cli": "^6.18",
+    "babel-polyfill": "^6.20",
+    "babel-preset-env": "^1.1",
+    "babel-preset-es2015": "^6.18",
+    "chai": "^3.5",
+    "mocha": "^3.2"
+  }
+}

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": ".",
+			"folder_exclude_patterns": ["*"]
+		},
+		{
+			"path": "lib/dev",
+			"name": "lib/dev",
+		},
+	]
+}
